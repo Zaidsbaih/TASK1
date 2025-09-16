@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+   <h1>Fooderz</h1>
+   <div class="boorder">
+       <div class="create_account">
+       <h3>Create new account</h3>
+       <form >
+            <div class="n1">
+            <input type="text" placeholder="Enter your first name" required class="f2" id="fname" />
+                    <input type="text" placeholder="Enter your last name" required class=" f2" id="lname" />
+				</div>
+            <br />
+
+                <input type="email" placeholder="Enter your Email" required class=" f3" id="email" />
+            <br />
+                <input type="password" placeholder="Enter your password" required class=" f3" id="pass" />
+            <br />
+                <input type="password" placeholder="Confirm your password please" required class=" f3" id="cpass" />
+            <br />
+                <input type="text" placeholder="Enter your City name" required class=" f3" id="city" />
+            
+            <br />
+            <p>Chose your gender</p>
+                
+                <div class="radio-input">
+                    <label>
+                        <input value="value-1" name="value-radio1" id="value-1" type="radio" />
+                        <span>Male</span>
+                    </label>
+                    <label>
+                        <input value="value-2" name="value-radio1" id="value-2" type="radio" />
+                        <span>Female</span>
+                    </label>
+                    <span class="selection"></span>
+                </div>
+
+            <br />
+            <p>Chose your Study Level</p>
+                
+                <div class="radio-input1">
+                    <label>
+                        <input type="radio" id="value-4" name="value-radio" value="value-1">
+                        <span>BA</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="value-5" name="value-radio" value="value-2">
+                        <span>Master</span>
+                    </label>
+                    <label>
+                        <input type="radio" id="value-6" name="value-radio" value="value-3">
+                        <span>PhD</span>
+                    </label>
+                    <span class="selection1"></span>
+                </div>
+            <br />
+            <button type="button" class="btn"> Cancel </button>
+                <button type="button" class="btn" onclick="fun1()"> Save </button>
+
+			</form>
+		</div>
+   </div>
+</div>
+<script>
+    function fun1(){
+        document.body.style.background = "#739EC9"
+    }
+    document.getElementById("fname").onmouseover = function() {
+        alert("أدخل اسمك الأول هنا");
+    };
+
+    document.getElementById("lname").onmouseover = function() {
+        alert("أدخل اسم العائلة هنا");
+    };
+
+    document.getElementById("email").onmouseover = function() {
+        alert("أدخل بريدك الإلكتروني هنا");
+    };
+
+    document.getElementById("pass").onmouseover = function() {
+        alert("أدخل كلمة المرور هنا");
+    };
+
+    document.getElementById("cpass").onmouseover = function() {
+        alert("أعد إدخال كلمة المرور هنا");
+    };
+
+    document.getElementById("city").onmouseover = function() {
+        alert("أدخل اسم مدينتك هنا");
+    };
+</script>
