@@ -13,5 +13,5 @@ It includes fields for email, name, password, city, gender, and study level.
 ---
 
 ## How to Run
-1. Open `WebApplication1.sln` in your browser.  
+1. Open `Index.cshtml` in your browser.  
 2. Fill the form and click **Save**.  
