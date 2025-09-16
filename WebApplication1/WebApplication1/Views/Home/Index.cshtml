@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -9,18 +9,18 @@
        <h3>Create new account</h3>
        <form >
             <div class="n1">
-            <input type="text" placeholder="Enter your first name" required class="f2" id="fname" />
-                    <input type="text" placeholder="Enter your last name" required class=" f2" id="lname" />
+                    <input type="text" placeholder="Enter your first name" required class="f2" id="fname" onmouseover="fun2()" />
+                    <input type="text" placeholder="Enter your last name" required class=" f2" id="lname" onmouseover="fun3()" />
 				</div>
             <br />
 
-                <input type="email" placeholder="Enter your Email" required class=" f3" id="email" />
+                <input type="email" placeholder="Enter your Email" required class=" f3" id="email" onmouseover="fun4()" />
             <br />
-                <input type="password" placeholder="Enter your password" required class=" f3" id="pass" />
+                <input type="password" placeholder="Enter your password" required class=" f3" id="pass" onmouseover="fun5()" />
             <br />
-                <input type="password" placeholder="Confirm your password please" required class=" f3" id="cpass" />
+                <input type="password" placeholder="Confirm your password please" required class=" f3" id="cpass" onmouseover="fun6()" />
             <br />
-                <input type="text" placeholder="Enter your City name" required class=" f3" id="city" />
+                <input type="text" placeholder="Enter your City name" required class=" f3" id="city" onmouseover="fun7()" />
             
             <br />
             <p>Chose your gender</p>
@@ -67,27 +67,26 @@
     function fun1(){
         document.body.style.background = "#739EC9"
     }
-    document.getElementById("fname").onmouseover = function() {
-        alert("أدخل اسمك الأول هنا");
+    function fun2() {
+        alert("Enter your first name ");
     };
 
-    document.getElementById("lname").onmouseover = function() {
-        alert("أدخل اسم العائلة هنا");
+    function fun3() {
+        alert("Enter your Last name ");
     };
 
-    document.getElementById("email").onmouseover = function() {
-        alert("أدخل بريدك الإلكتروني هنا");
+    function fun4() {
+        alert("Enter your email")
+
+    function fun5() {
+        alert("Enter your password ");
     };
 
-    document.getElementById("pass").onmouseover = function() {
-        alert("أدخل كلمة المرور هنا");
+    function fun6() {
+        alert("Reenter your password");
     };
 
-    document.getElementById("cpass").onmouseover = function() {
-        alert("أعد إدخال كلمة المرور هنا");
-    };
-
-    document.getElementById("city").onmouseover = function() {
-        alert("أدخل اسم مدينتك هنا");
+    function fun7() {
+        alert("Enter your City Name");
     };
 </script>
